@@ -8,6 +8,7 @@
  */
 
 import React, { Children, PropTypes } from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const ContextType = {
   // Enables critical path CSS rendering
@@ -60,7 +61,11 @@ class App extends React.PureComponent {
   render() {
     // NOTE: If you need to add or modify header, footer etc. of the app,
     // please do that inside the Layout component.
-    return Children.only(this.props.children);
+    return (
+      <MuiThemeProvider>
+        {Children.only(this.props.children)}
+      </MuiThemeProvider>
+    );
   }
 
 }

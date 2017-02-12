@@ -24,18 +24,12 @@ class Home extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <h1>React.js News</h1>
-          <ul className={s.news}>
-            {this.props.news.map((item, index) => (
-              <li key={index} className={s.newsItem}>
-                <a href={item.link} className={s.newsTitle}>{item.title}</a>
-                <span
-                  className={s.newsDesc}
-                  dangerouslySetInnerHTML={{ __html: item.content.substring(0, 100) }}
-                />
-              </li>
-            ))}
-          </ul>
+          <h1>React Starter Kit with Material UI</h1>
+          <p>
+            This repository is forked from <a href="https://github.com/kriasoft/react-starter-kit">Kriasoft React
+            Starter Kit</a>. Some dependencies about graphql, jwt, passport are removed
+            and <a href="http://www.material-ui.com/#/components/date-picker">Material UI</a> is added.
+          </p>
         </div>
       </div>
     );
