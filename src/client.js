@@ -10,7 +10,7 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import FastClick from 'fastclick';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 import UniversalRouter from 'universal-router';
 import queryString from 'query-string';
 import { createPath } from 'history/PathUtils';
@@ -110,7 +110,7 @@ let onRenderComplete = function initialRenderComplete() {
 };
 
 // Make taps on links and buttons work fast on mobiles
-FastClick.attach(document.body);
+injectTapEventPlugin();
 
 const container = document.getElementById('app');
 let appInstance;

@@ -15,7 +15,7 @@
     "cookie-parser": "^1.4.3",
     "core-js": "^2.4.1",
     "express": "^4.14.1",
-    "fastclick": "^1.0.6",
+    "react-tap-event-plugin": "^2.0.1",
     "fbjs": "^0.8.8",
     "history": "^4.5.1",
     "isomorphic-style-loader": "^1.1.0",
